@@ -6638,7 +6638,7 @@ header .main-ul {
 header .main-ul li {
   padding: 22px 0;
   border-top: 2px solid #fff;
-  transition: all 0.5s;
+  transition: all 0.6s ease-in-out;
 }
 header .main-ul li:hover {
   background-color: #fff;
@@ -6656,6 +6656,7 @@ header .main-ul li a {
 }
 header .main-ul .active {
   background-color: #fff !important;
+  transition: all 0.6s ease-in-out;
 }
 header .main-ul .active a {
   color: #a43f49;
@@ -7101,7 +7102,7 @@ header .copyright-text p {
   width: 100%;
   height: 100%;
   z-index: 111;
-  background-color: #000;
+  background-color: #fff;
 }
 #counter .load-content {
   position: absolute;
@@ -7109,10 +7110,12 @@ header .copyright-text p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  text-align: center;
 }
 #counter img {
-  min-width: 100vh;
-  height: 100vh;
+  width: 600px;
+  height: 600px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
