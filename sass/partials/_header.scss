@@ -9,6 +9,9 @@ header {
   overflow: scroll;
   height: 100%;
   padding: 60px 0 20px;
+  box-shadow: 4px 0px 10px -7px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 4px 0px 10px -7px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 4px 0px 10px -7px rgba(0, 0, 0, 0.9);
   z-index: 11;
   .scrollable-element {
     scrollbar-width: none;
@@ -43,7 +46,7 @@ header {
     li {
       padding: 22px 0;
       border-top: 2px solid #fff;
-      transition: all 0.5s;
+      transition: all 0.6s ease-in-out;
 
       &:hover {
         background-color: #fff;
@@ -63,6 +66,7 @@ header {
     }
     .active {
       background-color: #fff !important;
+      transition: all 0.6s ease-in-out;
       a {
         color: $secondary-color;
       }

@@ -28,22 +28,19 @@
             <img class="load-logo" src="images/preloader.gif" alt="" />
         </div>
     </div>
-
     <div class="root">
-        <div class="row">
+        <!-- mobile nav btn -->
+        <div class="mobile-x d-lg-none">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="row no-gutters">
             <!-- header starts here -->
             <header>
                 <div class="header-wrapper">
                     <nav class="navbar navbar-expand-lg navbar-light header-nav p-0">
-                        <button class="navbar-toggler mobile-btn" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse ul-wrapper flex-column" id="navbarSupportedContent">
-                            <div class="mobile-x d-lg-none">
-                                <i class="fa fa-times"></i>
-                            </div>
+
+                        <div class=" navbar-collapse ul-wrapper flex-column" id="navbarSupportedContent">
+
                             <div class="profile-info">
                                 <a href=""><img src="images/profile-img.jpg" alt=""></a>
                                 <h3>Maxghost</h3>
@@ -80,7 +77,7 @@
                 </div>
             </header>
             <!-- header ends here -->
-            <div class="col-md-9 col-xl-10 offset-xl-2 offset-3">
+            <div class="col-lg-9  offset-lg-3 bg-screen">
                 <div class="container">
                     <div class="content-wrapper">
                         <!-- section about us -->
@@ -91,7 +88,7 @@
                             <div class="about-content">
                                 <div class="row align-items-center">
                                     <div class="col-lg-6">
-                                        <div class="about-img">
+                                        <div class="about-img" data-aos="flip-right">
                                             <img src="images/about-me.jpg" alt="">
                                         </div>
                                     </div>
@@ -109,10 +106,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="about-content">
+                            <div class="about-content" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                                 <div class="row align-items-center flex-row-reverse">
                                     <div class="col-lg-6">
-                                        <div class="about-img">
+                                        <div class="about-img" data-aos="flip-left">
                                             <img src="images/about-2.jpg" alt="">
                                         </div>
                                     </div>
@@ -145,7 +142,8 @@
                             </p>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="box-content">
+                                    <div class="box-content" data-aos="fade-up"
+                                        data-aos-anchor-placement="bottom-bottom">
                                         <div class="good-icon html">
                                         </div>
                                         <h3>
@@ -157,7 +155,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="box-content">
+                                    <div class="box-content" data-aos="fade-up"
+                                        data-aos-anchor-placement="bottom-bottom">
                                         <div class="good-icon ideas">
                                         </div>
                                         <h3>
@@ -169,7 +168,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="box-content">
+                                    <div class="box-content" data-aos="fade-up">
                                         <div class="good-icon settings">
                                         </div>
                                         <h3>
@@ -181,7 +180,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="box-content">
+                                    <div class="box-content" data-aos-anchor-placement="bottom-bottom">
                                         <div class="good-icon dashboard">
                                         </div>
                                         <h3>
@@ -217,10 +216,10 @@
 
                                     <div class="project-content">
                                         <div class="row  isotope-gutter">
-                                            <div class="col-md-6 project-img-wrapper box html-css react php angular">
+                                            <div class="col-md-6 project-img-wrapper box html-css ">
                                                 <div class="project-img-main">
                                                     <img src="images/latest1.jpg" alt="" />
-                                                    <div class="isotopes-title">
+                                                    <div class="isotopes-title" data-aos="flip-up">
                                                         <div class="isotopes-inner">
                                                             <div class="search-icon">
                                                                 <a href=""><i class="fa fa-search"></i></a>
@@ -231,10 +230,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 latest-img-wrapper box react php angular">
+                                            <div class="col-md-6 latest-img-wrapper box react  php">
                                                 <div class="project-img-main">
                                                     <img src="images/latest2.jpg" alt="" />
-                                                    <div class="isotopes-title">
+                                                    <div class="isotopes-title" data-aos="flip-up">
                                                         <div class="isotopes-inner">
                                                             <div class="search-icon">
                                                                 <a href=""><i class="fa fa-search"></i></a>
@@ -245,10 +244,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 latest-img-wrapper box html-css react angular">
+                                            <div class="col-md-6 latest-img-wrapper box html-css ">
                                                 <div class="project-img-main">
                                                     <img src="images/latest3.jpg" alt="" />
-                                                    <div class="isotopes-title">
+                                                    <div class="isotopes-title" data-aos="flip-up">
                                                         <div class="isotopes-inner">
                                                             <div class="search-icon">
                                                                 <a href=""><i class="fa fa-search"></i></a>
@@ -259,10 +258,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 latest-img-wrapper box html-css react php">
+                                            <div class="col-md-6 latest-img-wrapper box  react ">
                                                 <div class="project-img-main">
                                                     <img src="images/latest4.jpg" alt="" />
-                                                    <div class="isotopes-title">
+                                                    <div class="isotopes-title" data-aos="flip-up">
                                                         <div class="isotopes-inner">
                                                             <div class="search-icon">
                                                                 <a href=""><i class="fa fa-search"></i></a>
@@ -273,10 +272,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 latest-img-wrapper box html-css react php">
+                                            <div class="col-md-6 latest-img-wrapper box php">
                                                 <div class="project-img-main">
                                                     <img src="images/latest5.jpg" alt="" />
-                                                    <div class="isotopes-title">
+                                                    <div class="isotopes-title" data-aos="flip-up">
                                                         <div class="isotopes-inner">
                                                             <div class="search-icon">
                                                                 <a href=""><i class="fa fa-search"></i></a>
@@ -287,10 +286,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 latest-img-wrapper box html-css react angular">
+                                            <div class="col-md-6 latest-img-wrapper box  angular">
                                                 <div class="project-img-main">
                                                     <img src="images/latest6.jpg" alt="" />
-                                                    <div class="isotopes-title">
+                                                    <div class="isotopes-title" data-aos="flip-up">
                                                         <div class="isotopes-inner">
                                                             <div class="search-icon">
                                                                 <a href=""><i class="fa fa-search"></i></a>
@@ -301,10 +300,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 latest-img-wrapper box latest7 react php angular">
+                                            <div class="col-md-6 latest-img-wrapper box latest7  php angular">
                                                 <div class="project-img-main">
                                                     <img src="images/latest7.jpg" alt="" />
-                                                    <div class="isotopes-title">
+                                                    <div class="isotopes-title" data-aos="flip-up">
                                                         <div class="isotopes-inner">
                                                             <div class="search-icon">
                                                                 <a href=""><i class="fa fa-search"></i></a>
@@ -315,10 +314,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 latest-img-wrapper box html-css react php angular">
+                                            <div class="col-md-6 latest-img-wrapper box  react php ">
                                                 <div class="project-img-main">
                                                     <img src="images/latest8.jpg" alt="" />
-                                                    <div class="isotopes-title">
+                                                    <div class="isotopes-title" data-aos="flip-up">
                                                         <div class="isotopes-inner">
                                                             <div class="search-icon">
                                                                 <a href=""><i class="fa fa-search"></i></a>
@@ -345,7 +344,7 @@
                                 tincidunt maximus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
                             <form>
-                                <div class="row">
+                                <div class="row" data-aos="fade-down" data-aos-anchor-placement="up-up">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Your name...">
