@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6598,6 +6599,9 @@ header {
   overflow: scroll;
   height: 100%;
   padding: 60px 0 20px;
+  box-shadow: 4px 0px 10px -7px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 4px 0px 10px -7px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 4px 0px 10px -7px rgba(0, 0, 0, 0.9);
   z-index: 11;
 }
 header .scrollable-element {
@@ -7116,6 +7120,160 @@ header .copyright-text p {
   width: 600px;
   height: 600px;
   text-align: center;
+}
+
+section {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 1600px) {
+  .bg-screen {
+    margin-left: 20%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header {
+    width: 250px;
+  }
+
+  .root .my-projects .project-content .project-img-main .isotopes-inner .search-icon a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .root .my-projects .project-content .project-img-main .isotopes-inner .search-icon a i {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .root .my-projects .project-content .project-img-main .isotopes-inner h3 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .root .my-projects .project-content .project-img-main .isotopes-inner span {
+    font-size: 13px;
+  }
+
+  .root .about-me .about-content .about-right h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .root .good-at .box-content {
+    padding: 30px;
+  }
+
+  header .profile-info a,
+header .profile-info a img {
+    width: 100px;
+    height: 100px;
+  }
+
+  header .profile-info a {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  header {
+    width: 300px;
+    left: -100%;
+    transition: all 0.6s ease-in-out;
+  }
+
+  header.show {
+    left: 0;
+  }
+
+  header.show::after {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    position: absolute;
+    left: 350px;
+    top: 0;
+  }
+
+  .mobile-x {
+    position: fixed;
+    left: 20px;
+    top: 15px;
+    font-size: 25px;
+    z-index: 111;
+    transition: all 0.5s ease-in-out;
+    padding: 10px 15px;
+    background-color: rgba(164, 63, 73, 0.8);
+  }
+
+  .mobile-x.show {
+    left: 250px;
+  }
+
+  .mobile-x.show i::before {
+    content: "";
+  }
+
+  section {
+    padding: 60px 0 !important;
+  }
+
+  .root .about-me p {
+    margin-bottom: 25px;
+  }
+
+  .root .about-me .about-content {
+    padding-top: 25px;
+  }
+
+  .root .about-me .about-content .about-img {
+    margin-bottom: 30px;
+  }
+
+  #counter img {
+    width: 300px;
+    height: auto;
+  }
+
+  #counter {
+    min-width: auto;
+    min-height: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 111;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .root p {
+    max-width: 100% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .root .my-projects .project-ul ul li {
+    margin: 0 10px;
+  }
+
+  .root .my-projects .project-ul ul li a {
+    font-size: 13px;
+  }
+
+  .root .good-at .box-content .good-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .root .good-at .box-content h3 {
+    font-size: 22px;
+    margin-bottom: 9px;
+  }
+
+  .root .my-projects .project-content .project-img-main .isotopes-title {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

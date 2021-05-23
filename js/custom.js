@@ -65,9 +65,11 @@ $(document).ready(function () {
 
 
     // for mobile 
-    // $('.mobile-x').click(function () {
-    //     $('.ul-wrapper').removeClass('collapse show')
-    // })
+    $('.mobile-x').click(function () {
+        $('header').toggleClass('show')
+        $(this).toggleClass('show')
+
+    })
 });
 // //   for isotopes
 (function ($) {

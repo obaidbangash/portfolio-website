@@ -9,6 +9,9 @@ header {
   overflow: scroll;
   height: 100%;
   padding: 60px 0 20px;
+  box-shadow: 4px 0px 10px -7px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 4px 0px 10px -7px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 4px 0px 10px -7px rgba(0, 0, 0, 0.9);
   z-index: 11;
   .scrollable-element {
     scrollbar-width: none;
